@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   CPHBUSINESS THESIS TEMPLATE
+% 
+%   Originally by Thomas S. N. Ebsen (cph-te52@cphbusiness.dk)
+%   This version Copyright (c) 2021 Thomas S. N. Ebsen
+%
+%   Board permissions are granted to use, modify, and distribute this software
+%   as specified in the MIT License included in this distribution's LICENSE file.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Thesis Title}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,RE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{Thomas Stevns Nielsen Ebsen}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\title{
+    {Suitably impressive thesis title}\\
+    {\large Subtitle}\\
+    {\includegraphics{cphbusiness-small.png}}
+}
+\author{Thomas Stevns Nielsen Ebsen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur posuere odio, vitae commodo ante tempor at. Integer et luctus nisi, at tristique lectus. Aliquam dictum arcu eu varius suscipit. Cras euismod ut leo sed suscipit. Curabitur odio ante, suscipit ac consequat eu, finibus sed massa. Donec luctus vehicula libero nec vehicula. Aenean in convallis nibh. Duis consectetur ex sed lacus sagittis ultricies.
+
+\chapter*{Dedication}
+To my mom and dad...
+
+\chapter*{Declaration}
+I declare that...
+
+\chapter*{Acknowledgement}
+I want to thank
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Chapter Two Title}
+\input{chapters/chapter02.tex}
+
+\chapter{Chapter Three Title}
+\input{chapters/chapter03.tex}
+
+\chapter{Chapter Four Title}
+\input{chapters/chapter04.tex}
+
+\chapter{Conclusion}
+\input{chapters/conclusion.tex}
+
+\appendix
+\chapter{Appendix Title}
+\input{chapters/appendix.tex}
+
+
+
+\end{document}
