@@ -28,6 +28,11 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
+\usepackage[style=authoryear, sorting=none]{biblatex}
+\addbibresource{pages/references.bib}
+
+\usepackage[autostyle]{csquotes} 
+
 
 \title{
     {Suitably impressive thesis title}\\
@@ -39,10 +44,9 @@
 
 \begin{document}
 
-\maketitle
+\input{pages/titlepage}
 
-\chapter*{Abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur posuere odio, vitae commodo ante tempor at. Integer et luctus nisi, at tristique lectus. Aliquam dictum arcu eu varius suscipit. Cras euismod ut leo sed suscipit. Curabitur odio ante, suscipit ac consequat eu, finibus sed massa. Donec luctus vehicula libero nec vehicula. Aenean in convallis nibh. Duis consectetur ex sed lacus sagittis ultricies.
+\input{pages/abstract.tex}
 
 \chapter*{Dedication}
 To my mom and dad...
@@ -58,24 +62,21 @@ I want to thank
 \listoftables
 
 \chapter{Introduction}
-\input{chapters/introduction}
+\input{pages/chapters/introduction}
 
-\chapter{Chapter Two Title}
-\input{chapters/chapter02.tex}
+\chapter{First Task}
+\input{pages/chapters/chapter02.tex}
 
-\chapter{Chapter Three Title}
-\input{chapters/chapter03.tex}
-
-\chapter{Chapter Four Title}
-\input{chapters/chapter04.tex}
+\chapter{Second Task}
+\input{pages/chapters/chapter03.tex}
 
 \chapter{Conclusion}
-\input{chapters/conclusion.tex}
+\input{pages/chapters/conclusion.tex}
 
 \appendix
 \chapter{Appendix Title}
-\input{chapters/appendix.tex}
+\input{pages/chapters/appendix.tex}
 
-
+\printbibliography
 
 \end{document}
