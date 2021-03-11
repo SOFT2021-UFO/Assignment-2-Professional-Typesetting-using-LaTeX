@@ -32,7 +32,9 @@
 \addbibresource{pages/references.bib}
 
 \usepackage[autostyle]{csquotes} 
-
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[colorinlistoftodos]{todonotes}
 
 \title{
     {Suitably impressive thesis title}\\
@@ -67,6 +69,10 @@
 \input{pages/chapters/graphics.tex}
 \input{pages/chapters/referencing.tex}
 \input{pages/chapters/sectionsAndParahraphs.tex}
+\input{pages/chapters/lists.tex}
+\input{pages/chapters/tabels.tex}
+\input{pages/chapters/codelisting.tex}
+\input{pages/chapters/mathequations.tex}
 
 \chapter{Conclusion}
 \input{pages/chapters/conclusion.tex}
@@ -76,5 +82,7 @@
 \input{pages/chapters/appendix.tex}
 
 \printbibliography
+
+\listoftodos
 
 \end{document}
